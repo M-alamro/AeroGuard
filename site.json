@@ -1,0 +1,42 @@
+{
+  "_comment": "Site configuration. Edit this, not the code.",
+  "node": {
+    "id": "NODE-1",
+    "lat": 24.774253,
+    "lon": 46.738586,
+    "_note": "Surveyed position of the tripod. For an indoor bench run, any fixed lat/lon works as an origin \u2014 all geometry is relative to it."
+  },
+  "propagation": {
+    "rssi_at_1m": -38.2,
+    "path_loss_n": 3.0,
+    "rssi_sigma": 2.0,
+    "_note": "rssi_at_1m comes from 'sensor_node.py --calibrate'. path_loss_n is 2.0 in free space, 2.5-3.0 outdoors with ground reflection, 3.0-4.0 indoors. rssi_sigma is the scan-to-scan standard deviation \u2014 it drives sigma_range and therefore the gate."
+  },
+  "gate": {
+    "k": 3.0,
+    "sigma_claim_m": 0.5,
+    "v_max": 2.0,
+    "latency_s": 0.4,
+    "_note": "R = k*sqrt(sigma_range^2 + sigma_claim^2) + v_max*latency. sigma_range is computed live from RSSI, so R changes with distance \u2014 which is the honest behaviour."
+  },
+  "evidence": {
+    "escalate_at": 10.0,
+    "gain_per_second": 3.0,
+    "decay_per_second": 4.5,
+    "_note": "Roughly 3.3 s of sustained mismatch before escalation."
+  },
+  "registry": {
+    "UA-0001": {
+      "operator": "Pavilion media team A",
+      "signature_mac": "dc:a6:32:d1:b7:eb",
+      "zone": "NATIONS",
+      "_note": "Measured from sater-emitter-a on 26 Sep 2026. Copying this MAC in by hand IS the accreditation step: an airframe was presented, its signature characterised, and the result recorded against a permission. Note what is NOT in this file: dc:a6:32:c4:24:47, the intruder. Nobody ever presented it."
+    },
+    "UA-0007": {
+      "operator": "Inspection flight",
+      "signature_mac": "b8:27:eb:00:00:07",
+      "zone": "THEMATIC",
+      "_note": "Registered but NOT airborne. This is the identity the ghost spoof claims."
+    }
+  }
+}
