@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.venv/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and generated results
+*.log
+runs/
+outputs/
+results/
+
+# Datasets and archives
+datasets/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
