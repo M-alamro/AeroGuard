@@ -201,9 +201,13 @@ flowchart LR
 
 **Videos**
 
-- [Simulation video](https://drive.google.com/file/d/1ahckxtsy3a_6EQRXYvmPVdAj5s15sKxE/view?usp=drive_link)
-- Demo videos: [monitoring screen](https://drive.google.com/file/d/1dFdajMkzGeUqDn1QHcn0gmheioZnCfxr/view?usp=drive_link), and [monitoring screen with the drone and the monitored drone](https://drive.google.com/file/d/12xaivkUUySHxOb-HYmxtj4wi8ZhKCtHY/view?usp=drive_link)
-- [Signal and drone-authorization detection mechanism](https://drive.google.com/file/d/1Bov-f6cWvYRuPc7K-1bn2o6Jq8fJF7PU/view?usp=drive_link)
+| Video | What it shows |
+|---|---|
+| [Simulation video](https://drive.google.com/file/d/1ahckxtsy3a_6EQRXYvmPVdAj5s15sKxE/view?usp=drive_link) | The full simulation run in Gazebo with detection, tracking, and the dashboard. |
+| [Demo 1: monitoring screen](https://drive.google.com/file/d/1dFdajMkzGeUqDn1QHcn0gmheioZnCfxr/view?usp=drive_link) | The live monitoring screen. |
+| [Demo 2: monitoring screen with the drones](https://drive.google.com/file/d/12xaivkUUySHxOb-HYmxtj4wi8ZhKCtHY/view?usp=drive_link) | The monitoring screen together with the patrol drone and the monitored drone. |
+
+Also: [signal and drone-authorization detection mechanism](https://drive.google.com/file/d/1Bov-f6cWvYRuPc7K-1bn2o6Jq8fJF7PU/view?usp=drive_link).
 
 ## Status and roadmap
 
